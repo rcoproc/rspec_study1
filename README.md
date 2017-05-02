@@ -18,6 +18,7 @@ Things you may want to cover:
 * Database initialization
 
 * How to run the test suite
+  
   rspec spec/lib/wordpress/comments/client_spec.rb
 
 * Services (job queues, cache servers, search engines, etc.)
