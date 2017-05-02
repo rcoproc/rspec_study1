@@ -16,6 +16,12 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+# require 'rspec/rails'
+
+# require 'capybara/rails'
+require 'capybara/rspec'
+
+# require 'capybara-webkit'
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
@@ -96,4 +102,12 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+  config.order = :random
+
+end
+
+
+Capybara.configure do |config|
+  config.run_server = false
+  config.app_host = 'http://localhost:3000'
 end
