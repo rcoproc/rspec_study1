@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CommentsDashboard</title>
+    <title><%= title %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,17 @@
   </head>
 
   <body>
+
+    <header>
+      <section>    
+        <div id="title">
+          <h1><%= title %></h1>
+          <h2><%= subtitle %></h1>
+        </div>
+      </section>
+
+    </header>
+
     <%= yield %>
   </body>
 </html>

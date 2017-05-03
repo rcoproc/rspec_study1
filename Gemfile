@@ -36,14 +36,22 @@ require 'nokogiri'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :test do
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'capybara'
+  gem 'database_cleaner', '~> 1.5'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'rb-fsevent', "~> 0.9.1"
+  gem 'guard'
+  gem 'guard-rspec'
   gem 'better_errors'
   gem 'binding_of_callers'
   gem 'pry-meta'
   #gem 'byebug', platform: :mri
-  gem 'rspec-rails', '~> 3.5'
-  gem 'capybara'
 end
 
 group :development do
