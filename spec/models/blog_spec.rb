@@ -1,11 +1,11 @@
+require_relative '../support/network'
+require_relative '../support/factory'
 require 'rails_helper'
 
 RSpec.describe Blog, type: :model do
-  let(:blog1) { Blog.new(title: "My Blog", 
-                        comments_feed_url: "http://feeds.mashable.com/Mashable") } 
+  let(:blog1) { Blog.new(Factory.blog_attributes1) } # in /support/factory 
 
-  let(:blog2) { Blog.new(title: "My Blog2", 
-                        comments_feed_url: "http://feeds.mashable.com/Mashable") } 
+  let(:blog2) { Blog.new(Factory.blog_attributes2) } # idem
 
   context 'Validations' do
     it { should validate_presence_of    :title }
@@ -38,6 +38,7 @@ RSpec.describe Blog, type: :model do
   describe "refresh comments" do 
     
     it "populates comments"  do
+      stub_network
       blog2.save!
       blog2.comments.refresh
       expect(blog2.comments.length).to eq 30
