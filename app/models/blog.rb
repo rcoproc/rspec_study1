@@ -5,8 +5,10 @@ class Blog < ApplicationRecord
 
   before_validation :build_permalink, on: :create
 
+  scope :recent, -> { order(:id).reverse_order.limit(12) }
 
   has_many :comments do
+
     def refresh
       comments_feed_url = proxy_association.owner.comments_feed_url
       comment_data = Wordpress::Comments::Client.new(comments_feed_url).fetch

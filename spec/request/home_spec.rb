@@ -30,10 +30,14 @@ feature "Home Page" do
   end
 
   context "populate database" do
+
+    fixtures :blogs
+
     before(:each) { visit root_path }
 
     scenario "show a list of blogs" do
-      pending "Need to write unit tests and Blog model first."
+      # pending "Need to write unit tests and Blog model first."
+      # save_and_open_page
       expect(page).to have_selector 'li a', text: 'Mashable'
     end
 
