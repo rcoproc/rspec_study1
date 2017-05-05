@@ -2,6 +2,9 @@
 
 Initial Study  with Rspec - Plural Sight 
 
+https://app.pluralsight.com/library/courses/rspec-the-right-way/table-of-contents
+by Geoffrey Grosenbach
+
 - [x] 03-05-2017, Comments Asscociation with tests;
 - [x] 03-05-2017, Guard Gem, Database-Clenaer Gem;
 - [x] 03-05-2017, Shoulda-Matchers Gem;
@@ -13,7 +16,36 @@ Things you may want to cover:
 
   2.3.0
 
-* System dependencies
+* Resumo do Curso / Considerações Finais
+
+- Dê pequenos passos;
+
+- Preste atenção à velocidade e outras métricas;
+
+- Construa os testes para seres humanos;
+
+  Tenha em mente que as pessoas estarão usando seus aplicativos (de alguma forma).
+
+- Use Ruby;
+
+  Tente implementar recursos (em código ou RSpec) com a linguagem Ruby. 
+  
+  Somente use as dependências de terceiros quando necessário.
+
+- Tente ficar no vermelho o menor tempo possível;
+
+  Como?
+
+  Escrever expectativas que só precisam de uma pequena quantidade de código de implementação para ser satisfeito.
+
+  Escreva a menor quantidade de código de implementação necessária para satisfazer cada expectativa.
+
+- Preste atenção à velocidade e outros resultados
+
+  A suite leva significativamente mais tempo para executar do que antes de implementar esse recurso? 
+  
+  Isso poderia sinalizar um problema no código de implementação ou nos exemplos.
+
 
 * Configuration
 
@@ -25,7 +57,7 @@ Things you may want to cover:
   
   rspec spec/lib/wordpress/comments/client_spec.rb
 
-  23 Tests Ok, 1 Pending
+  26 Tests Ok, 1 Pending
   
   ![alt tag](http://i.imgur.com/0MOTkXU.png)
 
