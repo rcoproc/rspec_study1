@@ -3,7 +3,8 @@
 Initial Study  with Rspec - Plural Sight 
 
 https://app.pluralsight.com/library/courses/rspec-the-right-way/table-of-contents
-by Geoffrey Grosenbach
+
+by Geoffrey Grosenbach - 3h 11m
 
 - [x] 03-05-2017, Comments Asscociation with tests;
 - [x] 03-05-2017, Guard Gem, Database-Clenaer Gem;
@@ -18,33 +19,33 @@ Things you may want to cover:
 
 * Resumo do Curso / Considerações Finais
 
-- Dê pequenos passos;
+  - **Dê pequenos passos;**
 
-- Preste atenção à velocidade e outras métricas;
+  - Preste atenção à velocidade e outras métricas;
 
-- Construa os testes para seres humanos;
+  - **Construa os testes para seres humanos;**
 
-  Tenha em mente que as pessoas estarão usando seus aplicativos (de alguma forma).
+    Tenha em mente que as pessoas estarão usando seus aplicativos (de alguma forma).
 
-- Use Ruby;
+  - **Use Ruby;**
 
-  Tente implementar recursos (em código ou RSpec) com a linguagem Ruby. 
-  
-  Somente use as dependências de terceiros quando necessário.
+    Tente implementar recursos (em código ou RSpec) com a linguagem Ruby. 
 
-- Tente ficar no vermelho o menor tempo possível;
+    Somente use as dependências de terceiros quando necessário.
 
-  Como?
+  - **Tente ficar no vermelho o menor tempo possível;**
 
-  Escrever expectativas que só precisam de uma pequena quantidade de código de implementação para ser satisfeito.
+    Como?
 
-  Escreva a menor quantidade de código de implementação necessária para satisfazer cada expectativa.
+    Escrever expectativas que só precisam de uma pequena quantidade de código de implementação para ser satisfeito.
 
-- Preste atenção à velocidade e outros resultados
+    Escreva a menor quantidade de código de implementação necessária para satisfazer cada expectativa.
 
-  A suite leva significativamente mais tempo para executar do que antes de implementar esse recurso? 
-  
-  Isso poderia sinalizar um problema no código de implementação ou nos exemplos.
+  - **Preste atenção à velocidade e outros resultados;**
+
+    A suite leva significativamente mais tempo para executar do que antes de implementar esse recurso? 
+
+    Isso poderia sinalizar um problema no código de implementação ou nos exemplos.
 
 
 * Configuration
