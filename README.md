@@ -47,13 +47,6 @@ Things you may want to cover:
 
     Isso poderia sinalizar um problema no código de implementação ou nos exemplos.
 
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
 * How to run the test suite
   
   rspec spec/lib/wordpress/comments/client_spec.rb
